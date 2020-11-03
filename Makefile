@@ -93,7 +93,7 @@ IMPLS = ada ada.2 awk bash basic bbc-basic c chuck clojure coffee common-lisp cp
 	elisp elixir elm erlang es6 factor fantom forth fsharp go groovy gnu-smalltalk \
 	guile haskell haxe hy io java js jq julia kotlin livescript logo lua make mal \
 	matlab miniMAL nasm nim objc objpascal ocaml perl perl6 php picolisp pike plpgsql \
-	plsql powershell ps python python.2 r racket rexx rpython ruby rust scala scheme skew \
+	plsql powershell ps python python.2 r racket rexx risp rpython ruby rust scala scheme skew \
 	swift swift3 swift4 swift5 tcl ts vala vb vhdl vimscript wasm wren yorick xslt zig
 
 EXTENSION = .mal
@@ -249,6 +249,7 @@ python.2_STEP_TO_PROG =      impls/python.2/$($(1)).py
 r_STEP_TO_PROG =             impls/r/$($(1)).r
 racket_STEP_TO_PROG =        impls/racket/$($(1)).rkt
 rexx_STEP_TO_PROG =          impls/rexx/$($(1)).rexxpp
+risp_STEP_TO_PROG =          impls/risp/$($(1))
 rpython_STEP_TO_PROG =       impls/rpython/$($(1))
 ruby_STEP_TO_PROG =          impls/ruby/$($(1)).rb
 rust_STEP_TO_PROG =          impls/rust/$($(1))
